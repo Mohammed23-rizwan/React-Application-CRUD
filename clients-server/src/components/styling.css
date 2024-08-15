@@ -1,0 +1,166 @@
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.Wrapper {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main_heading {
+  text-align: center;
+  padding-top: 25px;
+  font-family: "Raleway", sans-serif;
+}
+
+.books {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+.book {
+  height: 300px;
+  width: calc(12.5% - 15px);
+  margin-top: 10px;
+  display: flex;
+  margin-left: 10px;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid #3f3f3f;
+}
+img {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.title {
+  padding-top: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+p {
+  font-size: 12px;
+}
+.add {
+  cursor: pointer;
+  width: 120px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  margin: 20px;
+  background: #ffbe00;
+}
+.add a {
+  color: #ffffff;
+}
+a {
+  text-decoration: none;
+}
+.bookupdate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.only {
+  cursor: pointer;
+  width: 47%;
+  height: 25px;
+  margin: 5px;
+  background-color: #ffffff; /* Green */
+  border: none;
+  color: #25182e;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+.delete {
+  border: 1px solid #ca1f3d;
+  transition: 0.2s;
+}
+.delete:hover {
+  background: #ca1f3d;
+  color: #ffffff;
+}
+button a {
+  color: #25182e;
+}
+.update {
+  border: 1px solid #ffbe00;
+  transition: 0.2s;
+}
+.update:hover {
+  background: #ffbe00;
+}
+.update:hover a {
+  color: #ffffff;
+}
+.newbooks {
+  background: #ffbe00;
+}
+
+/* CSS For add page */
+
+.Form {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.formset {
+  width: 250px;
+  height: 300px;
+  background-color: #008cba;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+input {
+  width: 80%;
+  margin: 5px;
+  border: none;
+  padding: 10px;
+  outline: none;
+  border-radius: 2px;
+}
+.onlys {
+  cursor: pointer;
+  width: 50%;
+  height: 30px;
+  margin: 15px;
+  background-color: #04aa6d; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+/* mediaquery */
+@media only screen and (max-width: 768px) {
+  .book {
+    height: 320px;
+    width: calc(24% - 15px);
+  }
+}
+@media only screen and (max-width: 425px) {
+  .book {
+    height: 420px;
+    width: calc(95% - 15px);
+  }
+  img {
+    height: 320px;
+  }
+}
